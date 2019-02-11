@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Csv</title>
+    <!--incluimos la libreria-->
+    <script src="csvtojson.js"></script>
+</head>
+<script>
+    
+/*El formato usado  es csv separado por salto de linea y coma separado
+puesdes generar un archvio  csv desde  Microsoft Excel puedes abrir
+cualquier archivo de Excel y guardarlo con el formato csv*/
+    
+    
+//el archivo una vez decargado se pasa auna variable literal y la pasamos por la funcion filesCsv
+//que devulve un objeto json
+    
+var fileCsv = `Sally Whittaker,2018,McCarren House,312,3.75
+Belinda Jameson,2017,Cushing House,148,3.52
+Jeff Smith,2018,Prescott House,17-D,3.20
+Sandy Allen,2019,Oliver House,108,3.48`;
+    
+console.log(CsvToJson(fileCsv));
+    
+    
+</script>
+<body>
+    
+</body>
+</html>
